@@ -1,38 +1,120 @@
-.App {
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
+.sidebar {
+  box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+}
+.box-shadow{
+  box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+}
+.settings-box{
+  box-shadow: 120px 80px 40px 20px #0ff;
+}
+.nav-item,
+.navbar {
+  z-index: 10000;
+}
+.index{
+  z-index:1
+}
+@media screen and (max-width:800px) {
+  .sidebar{
+    z-index:1000000;
+  }
+  
+}
+form button {
+  color: #2980B9;
+  background: #fff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 0 15px;
+}
+small {
+  opacity: .4;
+  margin-top: 20px;
+  display: block;
+}
+.todo-text {
+  cursor: pointer;
+}
+input {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 7px 10px;
+  font-size: .5em;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: #000;
+  outline: 0;
+  border: 0;
+  flex: 1;
+}
+input::placeholder{
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-completed {
+  text-decoration: line-through;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.border-bottom{
+  border-bottom: 1px solid #f3f3f3;
+  margin-top: 1rem;
+  width: 100%;
+}
+#preview {
+  background: transparent
+    url('https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png')
+    no-repeat;
+  display: inline-block;
+  height: 80px;
+  margin: 10px 0;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #008000;
+}
+@media  screen and (max-width:800px) {
+  .sidebar{
+    z-index: 10000000;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.e-dlg-center-center, .e-quick-popup-wrapper.e-device{
+  z-index: 1000000 !important;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 6px;
 }
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.e-float-input.e-control-wrapper:not(.e-error) input:valid ~ label.e-float-text,
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .e-float-input.e-control-wrapper:not(.e-error) input ~ label.e-label-top.e-float-text {
+
+        color: red;
+
+    }
+    label.e-float-text, .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
+    .e-float-input.e-control-wrapper:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom {
+        color: rgb(49, 74, 78);
+    }
+
+    #charts_ChartBorder , #charts-bar_ChartBorder,#area-sparkLine_sparkline_area,#line-chart_ChartBorder,#chart-pie_border,#pyramid-chart_border{
+      fill:transparent !important
+    }
+    
+    
+    .e-grid.e-gridhover tr.e-row  .e-rowcell:not(.e-cellselectionbackground):not(.e-active):not(.e-updatedtd):not(.e-indentcell) { 
+      background-color: rgb(61, 180, 180)!important;
+     
+    }
+    
+   

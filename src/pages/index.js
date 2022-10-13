@@ -1,0 +1,15 @@
+export {default as AreaChart} from '../pages/Charts/AreaChart'
+export {default as BarChart} from '../pages/Charts/BarChart'
+export{ default as Dashboard} from './Dashboard.jsx'
+export {default as Orders} from './Orders.jsx'
+export {default as Customers} from './Customers.jsx'
+export {default as Employees} from './Employees.jsx'
+export {default as Calendar} from './Calendar.jsx'
+export {default as Kanban} from './Kanban.jsx'
+export {default as Editor} from './Editor.jsx'
+export {default as ColorPicker} from './ColorPicker.jsx'
+export {default as Line} from './Line.jsx'
+export {default as Pie} from './Charts/Pie.jsx'
+export {default as Stacked} from './Charts/Stacked.jsx'
+
+
